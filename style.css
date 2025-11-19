@@ -6,11 +6,14 @@ body {
     --text: #ebeef1;
     --background: #0d141a;
     --background-alt: #1f1f1f;
+    --background-translucent: #1f1f1f99;
     --primary: #92b9d9;
     --secondary: #205b8a;
     --accent: #3395e3;
 
     margin: 15px;
+
+    transition: all 200ms ease;
 }
 
 a {
@@ -48,7 +51,7 @@ button:hover {
 }
 
 img {
-    max-width: 300px;
+    max-width: 100%;
     height: auto;
     border-radius: 10px;
     transition: transform 180ms ease;
@@ -72,12 +75,14 @@ header {
     padding: 10px 20px;
     border-radius: 30px;
 
-    background-color: var(--background-alt);
+    background-color: var(--background-translucent);
+    backdrop-filter: blur(20px);
 
     position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 999;
 }
 
 header .links {
@@ -89,6 +94,22 @@ header .links {
 
 header h1 {
     margin: 0;
+    font-size: 24px;
+    transition: all 200ms ease;
+}
+
+@media (min-width: 600px) {
+    header h1 {
+        font-size: 32px;
+        transition: all 200ms ease;
+    }
+}
+
+@media (max-width: 350px) {
+    header h1 {
+        font-size: 18px;
+        transition: all 200ms ease;
+    }
 }
 
 header a {
@@ -97,11 +118,22 @@ header a {
 }
 
 main {
-    position: fixed;
-    left: 15px;
-    right: 15px;
-    top: calc(25px + 64px);
-    bottom: calc(10px + 64px);
+    position: relative;
+    margin: 90px auto 90px;
+    max-width: 1000px;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+@media (min-width: 800px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 30px;
+        align-items: stretch;
+    }
 }
 
 footer {
@@ -115,7 +147,8 @@ footer {
     text-align: center;
     font-size: 14px;
 
-    background-color: var(--background-alt);
+    background-color: var(--background-translucent);
+    backdrop-filter: blur(20px);
     position: fixed;
 }
 
@@ -127,11 +160,13 @@ footer a {
 
 .light-mode {
     --text: #121212;
-    --background: #f2f2f2;
+    --background: #dbdbdb;
     --background-alt: #ffffff;
+    --background-translucent: #ffffff99;
     --primary: #205b8a;
     --secondary: #92b9d9;
     --accent: #3395e3;
+    transition: all 200ms ease;
 }
 
 .mode-switcher {
@@ -146,7 +181,8 @@ footer a {
 /* Classes */
 
 .card {
-    background-color: var(--background-alt);
+    background-color: var(--background-translucent);
+    backdrop-filter: blur(20px);
     border-radius: 30px;
     padding: 20px;
 }
