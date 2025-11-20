@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML • CSS | Home</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,12 +18,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body>
+    <script>if(location.hash==='\u0023light'){document.body.classList.add('light-mode');}</script>
     <header>
         <h1><a href="/">HTML • CSS</a></h1>
 
         <div class="links">
-            <a href="#">Link</a>
-            <a href="#">Link</a>
             <a class="mode-switcher" onclick="lightModeToggle()"><span class="material-symbols-outlined">dark_mode</span></a>
         </div>
     </header>
@@ -31,30 +30,24 @@
 
     <main>
         <div class="card">
-            <h2>Erste Schritte</h2>
+            <h2>Willkommen</h2>
             <p>Text</p>
-            <img src="assets/images/placeholder.jpeg" alt="Image description">
-            <button>Button</button>
+            <button type="button" onclick="window.location.href='#'">Erste Schritte</button>
+            <button type="button" onclick="window.location.href='/html/'">HTML Befehle</button>
+            <button type="button" onclick="window.location.href='/css/'">CSS Befehle</button>
         </div>
 
         <div class="card">
-            <h2>HTML Commands</h2>
+            <h2>placeholder</h2>
             <p>Text</p>
             <img src="assets/images/placeholder.jpeg" alt="Image description">
-            <button>Button</button>
-        </div>
-
-        <div class="card">
-            <h2>CSS Commands</h2>
-            <p>Text</p>
-            <img src="assets/images/placeholder.jpeg" alt="Image description">
-            <button>Button</button>
+            <button type="button" onclick="window.location.href='#'">Öffnen</button>
         </div>
     </main>
 
 
     <footer>
-        © 2025 • <a href="https://nicojpeg.com" target="_blank">Website</a> • <a href="mailto:contact@nicojpeg.com">Email</a>
+        © 2025 • <a class="button" href="https://nicojpeg.com" target="_blank">Website</a> • <a href="mailto:contact@nicojpeg.com">Email</a>
     </footer>
 
     <script src="script.js"></script>
