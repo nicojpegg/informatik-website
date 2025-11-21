@@ -62,6 +62,18 @@ img:hover {
     transition: transform 180ms ease;
 }
 
+iframe {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 180ms ease;
+}
+
+iframe:hover {
+    transform: scale(1.02);
+    transition: transform 180ms ease;
+}
+
 h1, h2, h3 {
     font-family: "Special Gothic Expanded One";
     color: var(--primary);
