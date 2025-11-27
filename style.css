@@ -1,3 +1,5 @@
+/* Tags */
+
 body {
     background-color: var(--background);
     color: var(--text);
@@ -167,6 +169,15 @@ main {
     main > :only-child {
         column-span: all;
     }
+
+    .hero-card {
+        column-span: all;
+    }
+
+    /* Utility: force a specific card to span all columns */
+    .span-all {
+        column-span: all;
+    }
 }
 
 footer {
@@ -187,6 +198,18 @@ footer {
 
 footer a {
     color: var(--primary);
+}
+
+ol {
+    padding-left: 20px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+ul {
+    padding-left: 20px;
+    margin-top: 0;
+    margin-bottom: 15px;
 }
 
 table {
@@ -284,4 +307,44 @@ details.card[open] summary::after {
 
 details.card[open] summary {
     margin-bottom: 15px;
+}
+
+/* Hero Card */
+
+.hero-card {
+    background: linear-gradient(-45deg, var(--secondary), var(--primary), var(--secondary));
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    color: white;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: none;
+    margin-bottom: 30px;
+}
+
+.hero-card h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.hero-card p {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #ffffff67;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
