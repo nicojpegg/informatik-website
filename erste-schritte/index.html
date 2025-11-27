@@ -36,13 +36,56 @@
             <button type="button" onclick="window.location.href='#'">Öffnen</button>
         </div>
 
-        <div class="card">
-            <h2>1.</h2>
-            <p>Text</p>
-            <button type="button" onclick="window.location.href='#'">Öffnen</button>
-        </div>
-    </main>
+        <details class="card">
+            <summary><h2>1. Ordnerstruktur</h2></summary>
+            <p>Hier ist ein Beispiel für eine Ordnerstruktur. Besonders wichtig ist die Bennenung der Homepage-Datei als <code>index.html</code>.</p>
+            <a href="/assets/erste-schritte/structure.png" target="_blank"><img src="/assets/erste-schritte/structure.png" alt="Ordnerstruktur Beispiel"></a>        
+        </details>
 
+        <details class="card">
+            <summary><h2>2. HTML Datei erstellen</h2></summary>
+            <p>Erstelle eine neue Datei mit dem Namen <code>index.html</code> in deinem Projektordner. Diese Datei wird die Startseite deiner Website sein.</p>
+            <a href="/assets/erste-schritte/code-html.png" target="_blank"><img src="/assets/erste-schritte/code-html.png" alt="HTML Grundgerüst"></a>
+        </details>
+
+        <details class="card">
+            <summary><h2>3. Strukturierung</h2></summary>
+            <p>Nutze <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, und andere Überschriften-Tags, um deine Inhalte zu strukturieren. Verwende Absätze <code>&lt;p&gt;</code> für Text und <code>&lt;a&gt;</code> für Links.</p>
+        </details>
+
+        <details class="card">
+            <summary><h2>4. CSS Datei erstellen</h2></summary>
+            <p>Erstelle eine neue Datei mit dem Namen <code>style.css</code> in deinem Projektordner. Diese Datei wird das Aussehen deiner Website definieren.</p>
+            <p>Verlinke die CSS-Datei in deiner HTML-Datei im <code>&lt;head&gt;</code>-Bereich:</p>
+            <code>&lt;link rel="stylesheet" href="style.css"&gt;</code>
+        </details>
+
+        <details class="card">
+            <summary><h2>5. CSS Regeln hinzufügen</h2></summary>
+            <p>Füge in der <code>style.css</code>-Datei CSS-Regeln hinzu, um das Aussehen deiner HTML-Elemente zu gestalten. Zum Beispiel:</p>
+            <code>body {<br>    background-color: black;<br>    color: white;<br>}</code>
+            <p>Dies ändert die Hintergrundfarbe der Seite und die Textfarbe.</p>
+        </details>
+
+        <details class="card">
+            <summary><h2>6. Vorschau im Browser</h2></summary>
+            <p>Öffne die <code>index.html</code>-Datei in einem Webbrowser, um eine Vorschau deiner Website zu sehen. Du kannst die Datei einfach per Drag & Drop in das Browserfenster ziehen.</p>
+            <p>Alternativ kannst du mit <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a> und der Erweiterung "Live Preview" eine Vorschau starten.</p>
+            <a href="/assets/erste-schritte/live-preview.png" target="_blank"><img src="/assets/erste-schritte/live-preview.png" alt="Live Preview Plugin von Microsoft"></a>
+        </details>
+
+        <details class="card">
+            <summary><h2>7. CSS-Box-Modell</h2></summary>
+            <p>Das CSS-Box-Modell beschreibt, wie Elemente auf einer Webseite dargestellt werden. Jedes Element wird als Rechteck (Box) dargestellt, das aus vier Bereichen besteht:</p>
+            <ul>
+                <li><strong>Content</strong>: Der eigentliche Inhalt des Elements (Text, Bild, etc.).</li>
+                <li><strong>Padding</strong>: Der Innenabstand zwischen dem Inhalt und dem Rand des Elements.</li>
+                <li><strong>Border</strong>: Der Rahmen um das Element.</li>
+                <li><strong>Margin</strong>: Der Außenabstand zwischen dem Element und anderen Elementen.</li>
+            </ul>
+            <a href="https://developer.mozilla.org/de/docs/Web/CSS/Guides/Box_model" target="_blank"><img src="/assets/erste-schritte/box-model.png" alt="CSS Box Modell"></a>
+        </details>
+    </main>
 
     <footer>
         © 2025 • <a href="https://nicojpeg.com" target="_blank">Website</a> • <a href="mailto:contact@nicojpeg.com">Email</a>

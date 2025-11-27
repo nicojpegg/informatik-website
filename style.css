@@ -50,6 +50,13 @@ button:hover {
     transition: background-color 180ms ease, transform 180ms ease;
 }
 
+code {
+    font-family: "Source Code Pro", monospace;
+    background-color: var(--background-alt);
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -58,8 +65,14 @@ img {
 }
 
 img:hover {
-    transform: scale(1.02);
+    transform: scale(1.04);
     transition: transform 180ms ease;
+}
+
+@media (max-width: 400px) {
+    img:hover {
+        transform: scale(1.08);
+    }
 }
 
 iframe {
@@ -141,10 +154,18 @@ main {
 
 @media (min-width: 800px) {
     main {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-        gap: 30px;
-        align-items: stretch;
+        display: block;
+        column-width: 350px;
+        column-gap: 30px;
+    }
+
+    main .card {
+        break-inside: avoid;
+        margin-bottom: 30px;
+    }
+
+    main > :only-child {
+        column-span: all;
     }
 }
 
@@ -232,4 +253,35 @@ th {
 
 .card button {
     margin-top: 10px;
+}
+
+/* Collapsible Card */
+
+details.card summary {
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+details.card summary h2 {
+    margin-bottom: 0;
+}
+
+details.card summary::after {
+    content: '+';
+    font-family: "Special Gothic Expanded One";
+    font-size: 24px;
+    color: var(--primary);
+    margin-left: 10px;
+}
+
+details.card[open] summary::after {
+    content: '-';
+    transition: all 200ms ease;
+}
+
+details.card[open] summary {
+    margin-bottom: 15px;
 }
