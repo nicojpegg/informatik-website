@@ -1,9 +1,14 @@
+// Apply theme from storage
+
 function applyInitialThemeFromStorage() {
   const stored = localStorage.getItem('theme');
   if (stored === 'light') {
     document.body.classList.add('light-mode');
   }
 }
+
+
+// Update icon based on theme
 
 function updateModeIcon() {
   const icon = document.querySelector('.links .material-symbols-outlined');
@@ -13,6 +18,9 @@ function updateModeIcon() {
     ? 'light_mode'
     : 'dark_mode';
 }
+
+
+// Toggle light/dark mode
 
 function lightModeToggle() {
   const body = document.body;
@@ -26,6 +34,9 @@ function lightModeToggle() {
 
   updateModeIcon();
 }
+
+
+// Event listener
 
 document.addEventListener('DOMContentLoaded', () => {
   applyInitialThemeFromStorage();

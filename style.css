@@ -1,4 +1,4 @@
-/* Tags */
+/* Body */
 
 body {
     background-color: var(--background);
@@ -18,6 +18,9 @@ body {
     transition: all 200ms ease;
 }
 
+
+/* Links */
+
 a {
     color: var(--text);
     transition: color 180ms ease, transform 180ms ease;
@@ -28,6 +31,9 @@ a:hover {
     transform: scale(1.2);
     transition: color 180ms ease, transform 180ms ease;
 }
+
+
+/* Buttons */
 
 button {
     background-color: var(--secondary);
@@ -52,12 +58,18 @@ button:hover {
     transition: background-color 180ms ease, transform 180ms ease;
 }
 
+
+/* Code Snippets */
+
 code {
     font-family: "Source Code Pro", monospace;
     background-color: var(--background-alt);
     padding: 2px 4px;
     border-radius: 4px;
 }
+
+
+/* Images */
 
 img {
     max-width: 100%;
@@ -77,22 +89,16 @@ img:hover {
     }
 }
 
-iframe {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    transition: transform 180ms ease;
-}
 
-iframe:hover {
-    transform: scale(1.02);
-    transition: transform 180ms ease;
-}
+/* Headings */
 
 h1, h2, h3 {
     font-family: "Special Gothic Expanded One";
     color: var(--primary);
 }
+
+
+/* Header */
 
 header {
     top: 15px;
@@ -144,6 +150,9 @@ header a {
     color: inherit;
 }
 
+
+/* Main Content */
+
 main {
     position: relative;
     margin: 90px auto 90px;
@@ -174,11 +183,13 @@ main {
         column-span: all;
     }
 
-    /* Utility: force a specific card to span all columns */
     .span-all {
         column-span: all;
     }
 }
+
+
+/* Footer */
 
 footer {
     bottom: 15px;
@@ -200,6 +211,9 @@ footer a {
     color: var(--primary);
 }
 
+
+/* Lists */
+
 ol {
     padding-left: 20px;
     margin-top: 0;
@@ -211,6 +225,9 @@ ul {
     margin-top: 0;
     margin-bottom: 15px;
 }
+
+
+/* Table */
 
 table {
     width: 100%;
@@ -227,6 +244,7 @@ th {
     background-color: var(--background-alt);
     color: var(--primary);
 }
+
 
 /* Light/Dark Mode */
 
@@ -250,7 +268,8 @@ th {
     font-size: 22px;
 }
 
-/* Classes */
+
+/* Cards */
 
 .card {
     background-color: var(--background-translucent);
@@ -278,45 +297,15 @@ th {
     margin-top: 10px;
 }
 
-/* Collapsible Card */
-
-details.card summary {
-    cursor: pointer;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-details.card summary h2 {
-    margin-bottom: 0;
-}
-
-details.card summary::after {
-    content: '+';
-    font-family: "Special Gothic Expanded One";
-    font-size: 24px;
-    color: var(--primary);
-    margin-left: 10px;
-}
-
-details.card[open] summary::after {
-    content: '-';
-    transition: all 200ms ease;
-}
-
-details.card[open] summary {
-    margin-bottom: 15px;
-}
 
 /* Hero Card */
 
-.hero-card {
+.hero {
     background: linear-gradient(-45deg, var(--secondary), var(--primary), var(--secondary));
     background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+    animation: gradient 10s ease infinite;
     color: white;
-    min-height: 250px;
+    min-height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -326,12 +315,12 @@ details.card[open] summary {
     margin-bottom: 30px;
 }
 
-.hero-card h1 {
+.hero h1 {
     font-size: 2.5rem;
     margin: 0;
 }
 
-.hero-card p {
+.hero p {
     font-size: 1rem;
     margin-top: 10px;
     color: #ffffff67;
