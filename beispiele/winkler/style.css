@@ -1,0 +1,40 @@
+body {
+    /* background-image: linear-gradient(67deg, aqua, blue, fuchsia, lime, yellow); */
+    background-image: url('winkler.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: white;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    color: red;
+    text-align: center;
+    padding-top: 20px;
+}
+
+img {
+    border: 5px solid orange;
+    max-width: 350px;
+    display: block;
+    margin: 20px auto;
+}
+
+iframe {
+    border: 5px solid lime;
+    max-width: 350px;
+    display: block;
+    margin: 20px auto;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 1px;
+    background-color: yellow;
+    color: lime;
+    width: 100%;
+    bottom: 0;
+}
