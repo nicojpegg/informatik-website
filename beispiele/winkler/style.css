@@ -4,29 +4,30 @@ body {
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+    backdrop-filter: blur(5px);
     font-family: 'Comic Sans MS', cursive, sans-serif;
     color: white;
     margin: 0;
+    margin-left: 20px;
 }
 
 h1, h2, h3 {
     color: red;
-    text-align: center;
     padding-top: 20px;
 }
 
 img {
     border: 5px solid orange;
     max-width: 350px;
-    display: block;
     margin: 20px auto;
+    border-radius: 15px;
 }
 
 iframe {
     border: 5px solid lime;
     max-width: 350px;
-    display: block;
     margin: 20px auto;
+    border-radius: 15px;
 }
 
 footer {
