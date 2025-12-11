@@ -1,3 +1,5 @@
+// script.js
+
 // Apply theme from storage
 
 function applyInitialThemeFromStorage() {

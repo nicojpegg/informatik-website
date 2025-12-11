@@ -1,3 +1,5 @@
+/* Global Styles */
+
 /* Body */
 
 body {
@@ -206,7 +208,7 @@ footer {
     backdrop-filter: blur(20px);
     position: fixed;
 }
-
+/* 67 */
 footer a {
     color: var(--primary);
 }
