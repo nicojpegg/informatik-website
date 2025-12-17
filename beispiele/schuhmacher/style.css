@@ -12,8 +12,21 @@ body {
 header {
     background-color: var(--accent);
     color: white;
-    padding: 2px;
+    padding: 10px;
     text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header a {
+    position: absolute;
+    left: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 14px; 
 }
 
 main {

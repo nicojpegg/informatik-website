@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML • CSS | Erste Schritte</title>
 
-    <link rel="stylesheet" href="/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="stylesheet" href="../style.css">
 
 
     <!-- Google Fonts -->
@@ -26,10 +30,10 @@
 <body>
     <script>if(location.hash==='\u0023light'){document.body.classList.add('light-mode');}</script>
     <header>
-        <h1><a href="/">HTML • CSS</a></h1>
+        <h1><a href="../index.html">HTML • CSS</a></h1>
 
         <div class="links">
-            <a href="/">Home</a>
+            <a href="../index.html">Home</a>
             <a class="mode-switcher" onclick="lightModeToggle()"><span class="material-symbols-outlined">dark_mode</span></a>
         </div>
     </header>
@@ -48,14 +52,14 @@
                 <li>Stylesheet: <code>style.css</code></li>
                 <li>Bilder: <code>images/</code></li>
             </ul>
-            <a href="/assets/erste-schritte/structure.png" target="_blank"><img src="/assets/erste-schritte/structure.png" alt="Ordnerstruktur Beispiel"></a>        
+            <a href="../assets/erste-schritte/structure.png" target="_blank"><img src="../assets/erste-schritte/structure.png" alt="Ordnerstruktur Beispiel"></a>        
         </div>
 
         <div class="card">
             <h2>2. HTML-Datei erstellen</h2>
             <p>Erstelle eine neue Datei mit dem Namen <code>index.html</code> in deinem Projektordner. Diese Datei wird die Startseite deiner Website sein.</p>
             <p>In Visual Studio Code kannst du dieses Grundgerüst einfügen, indem du <code>!</code> eintippst und Enter drückst.</p>
-            <a href="/assets/erste-schritte/code-html.png" target="_blank"><img src="/assets/erste-schritte/code-html.png" alt="HTML Grundgerüst"></a>
+            <a href="../assets/erste-schritte/code-html.png" target="_blank"><img src="../assets/erste-schritte/code-html.png" alt="HTML Grundgerüst"></a>
         </div>
 
         <div class="card">
@@ -85,21 +89,21 @@
                 <li><strong>Border</strong>: Der Rahmen um das Element.</li>
                 <li><strong>Margin</strong>: Der Außenabstand zwischen dem Element und anderen Elementen.</li>
             </ol>
-            <a href="https://developer.mozilla.org/de/docs/Web/CSS/Guides/Box_model" target="_blank"><img src="/assets/erste-schritte/box-model.png" alt="CSS Box Modell"></a>
+            <a href="https://developer.mozilla.org/de/docs/Web/CSS/Guides/Box_model" target="_blank"><img src="../assets/erste-schritte/box-model.png" alt="CSS Box Modell"></a>
         </div>
 
         <div class="card">
             <h2>7. Vorschau der Website</h2>
             <p>Um deine Website in einem Webbrowser anzusehen, öffne die <code>index.html</code>-Datei in einem Browser.</p>
             <p>In Visual Studio Code kannst du auch die "Live Server"-Erweiterung verwenden, um Änderungen an deiner Seite in Echtzeit zu sehen.</p>
-            <img src="/assets/erste-schritte/live-preview.png" alt="Live Server in VS Code">
+            <img src="../assets/erste-schritte/live-preview.png" alt="Live Server in VS Code">
         </div>
 
         <div class="card">
             <h2>8. Nächste Schritte</h2>
             <p>Jetzt kannst du beginnen deine Website mit weiteren HTML-Tags und CSS-Attributen zu gestalten.</p>
-            <button type="button" onclick="window.location.href='/html/'">HTML Tags</button>
-            <button type="button" onclick="window.location.href='/css/'">CSS Attribute</button>
+            <button type="button" onclick="window.location.href='../html/index.html'">HTML Tags</button>
+            <button type="button" onclick="window.location.href='../css/index.html'">CSS Attribute</button>
         </div>
     </main>
 
@@ -108,6 +112,6 @@
         © 2025 • <a href="https://nicojpeg.com" target="_blank">Website</a> • <a href="mailto:contact@nicojpeg.com">Email</a>
     </footer>
 
-    <script src="/script.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>
